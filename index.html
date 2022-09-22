@@ -12,32 +12,43 @@
 	
 	<body>
 
-		<div class="container">
+		<form>
+			<div class="container">
 
-				<div class="icon">
-					<img src="images/icon-star.svg" alt="an orange star icon">
-				</div>
+					<div class="icon">
+						<img src="images/icon-star.svg" alt="an orange star icon">
+					</div>
 
-				<h1>How did we do?</h1>
-				<p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
-				
-				<div class="ratings">
-					<input type="radio" name="rating" value="1" class="numbers">
-					<label for="1">1</label>
-					<input type="radio" name="rating" value="2" class="numbers">
-					<label for="2">2</label>
-					<input type="radio" name="rating" value="3" class="numbers">
-					<label for="3">3</label>
-					<input type="radio" name="rating" value="4" class="numbers">
-					<label for="4">4</label>
-					<input type="radio" name="rating" value="5" class="numbers">
-					<label for="5">5</label>
-				</div>
+					<h1>How did we do?</h1>
+					<p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+					
+					<div class="ratings">
+						<input type="radio" name="rating" value="1" class="numbers" id="1">
+						<label for="1">1</label>
+						<input type="radio" name="rating" value="2" class="numbers" id="2">
+						<label for="2">2</label>
+						<input type="radio" name="rating" value="3" class="numbers" id="3">
+						<label for="3">3</label>
+						<input type="radio" name="rating" value="4" class="numbers" id="4">
+						<label for="4">4</label>
+						<input type="radio" name="rating" value="5" class="numbers" id="5">
+						<label for="5">5</label>
+					</div>
 
-			<form action="submit.html">
-				<input type="Submit" name="Submit" value="SUBMIT" class="submit">
-			</form>
-		</div>
+					<input type="Submit" name="Submit" value="SUBMIT" class="submit">
+			</div>
+		</form>
+
+		<!-- Submit Page -->
+
+		<div class="submit-container">
+            <img src="images/illustration-thank-you.svg" class="img-phone" alt="a smartphone with a receipt and credit card coming out of it">
+            <div class="selected">
+                <p>You selected <span id="rate"></span> out of 5 stars</p>
+            </div>
+            <h1 class="thanks">Thank you!</h1>
+            <p>We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!</p>
+        </div>
 
         <script src="main.js"></script>
 	</body>
