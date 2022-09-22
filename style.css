@@ -14,6 +14,10 @@ body {
     font-size: 15px;
 }
 
+.container {
+    display: inline-block;
+}
+
 .container, .submit-container {
     background-color: #202731;
     width: 400px;
@@ -76,7 +80,7 @@ label:hover {
     cursor: pointer;
 }
 
-input:checked + label {
+input:checked + label, input:focus-visible + label {
     background-color: #7b8795;
     color: white;
 }
@@ -91,7 +95,7 @@ input:checked + label {
     font-size: 16px;
 }
 
-input:hover {
+.submit:hover {
     background-color: white;
     color: #fc7613;
     cursor: pointer;
@@ -100,8 +104,8 @@ input:hover {
 /* Submit page styling */
 
 .submit-container {
+    display: none;
     text-align: center;
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
